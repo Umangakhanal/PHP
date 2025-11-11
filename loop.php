@@ -48,5 +48,6 @@ for ($y=0;$y<10;$y++){
         echo "$color <br>";
         
     }
+    print_r($colors);
     var_dump($colors);
 ?>
