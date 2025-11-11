@@ -18,4 +18,26 @@ do{
 for($a=1; $a<=5;$a++){
     echo  $a;
 }
+
+//break and continue
+ echo"<br>";
+for($x=0;$x<10;$x++){
+    if($x== 4){
+        break;
+    }
+    echo "The number is: $x <br>";
+}
+ echo"<br>";
+for($x=0;$x<10;$x++){
+    if($x== 4){
+        continue;
+    }
+    echo "The number is: $x <br>";
+}
+for ($y=0;$y<10;$y++){
+    if($y%2==0){
+        continue;
+    }
+    echo "$y is ODD <br>";
+}
 ?>
