@@ -40,4 +40,13 @@ for ($y=0;$y<10;$y++){
     }
     echo "$y is ODD <br>";
 }
+
+//foreach loop
+ echo"<br>";
+    $colors = array("red","green","blue","yellow");
+    foreach($colors as $color){
+        echo "$color <br>";
+        
+    }
+    var_dump($colors);
 ?>
