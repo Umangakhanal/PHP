@@ -23,6 +23,10 @@ print_r($course[1]);
 
  foreach($course as $program){
     echo "$program <br>";
+ };
+ for($i=0;$i<count($course);$i++){
+   echo $course[$i];
  }
+echo "<br>";
 
 ?>
