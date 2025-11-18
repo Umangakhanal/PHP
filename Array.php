@@ -19,5 +19,18 @@ echo"<br>";
 var_dump($student);
 
 //multidimensional array
+$staff_details = array(
+ "staff1"=>  array("name"=>"Ram","salary"=>10000),
+  "staff2"=> array( "name"=>"Hari","salary"=>20000)
+);
+
+echo $staff_details["staff1"]["name"];
+echo "<br";
+
+// echo $staff_details;
+echo "<br>";
+print_r($staff_details);
+var_dump($staff_details);
+
 
 ?>
