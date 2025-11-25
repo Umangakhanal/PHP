@@ -3,7 +3,7 @@
 // echo "$x <br>";
 // echo '$x <br>';
 // //above 3 lines are to show difference between "" and '' 
-// $a=array(1,'2','3','4','5');
+$a=array(1,'2','3','4','5');
 // print_r($a);
 // echo "<br>";
 // var_dump($a);
@@ -65,13 +65,42 @@ array_pop($movies);
 var_dump($movies);
 array_push($movies,"Aama");
 var_dump($movies);
-
+ 
 //shuffle and reverse
 $color = array("red","blue","yellow","orange","green","black");
-shuffle($color);
+// shuffle($color);
 var_dump($color);
 array_reverse($color);
 var_dump($color);
 
+//in_array()
+var_dump(in_array('red',$color));
+
+//array_key_exist()
+$cities = array("Nepal"=>"Kathmandu", "US"=>"california");
+// echo array_key_exists('Nepal',$cities);
+
+//sort()
+//sort($a);
+//print_r($a);
+
+//var_dump(asort($cities));
+//var_dump ($cities);
+$a = sort ($cities);
+echo $a;
+print_r(asort($cities));
+//merge
+$dark =array('black','brown','blue');
+$light = array('white','yellow','green','blue');
+var_dump(array_merge($dark,$light));
+//intersect and diff
+$common=array_intersect($dark,$light);
+var_dump($common);
+$unique = array_diff($dark,$light);
+var_dump($unique);
+
+// list function
+list($x,,$y,$z)=$light;
+echo "here I only need $x, $y and $z";
 
 ?>
