@@ -11,7 +11,6 @@ $students=array(
 function calculateAverage($marks){
     $sum= 0;
     $count=count($marks);
-
     for ($i=0; $i<$count;$i++){
         $sum+=$marks[$i];
     }
@@ -19,7 +18,7 @@ function calculateAverage($marks){
 }
 foreach($students as $student){
     $avg= calculateAverage($student["marks"]);
-    print_r( $student["name"]."-Average: ". $avg);
+    echo ( $student["name"]."-Average: ". $avg);
     echo "<br>";
 }
 $i=0;
