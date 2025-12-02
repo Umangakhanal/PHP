@@ -12,7 +12,7 @@
     <form  action="abc.php" method="post">
 
         <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" ><br><br>
+        <input type="text" id="name" name="names" ><br><br>
         <label  for ="password">Password:</label><br>
         <input type="password" id="password" name="password" ><br>
 
