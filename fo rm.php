@@ -26,7 +26,7 @@ echo '
 <body>
 
     <h2>Registration Form</h2>
-    <form  action="';echo $_SERVER['PHP_SELF'];echo '"method="post">
+    <form  action="';echo htmlspecialchars( $_SERVER['PHP_SELF']);echo '"method="post">
 
         <label for="name">Full Name:</label><br>
         <input type="text" id="name" name="name" ><br><br>
