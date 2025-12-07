@@ -1,3 +1,21 @@
+<?php
+// if (isset($_POST['']))
+if (isset($_POST))
+    {
+    $data=$_POST;
+    echo "Data";
+    var_dump($data);
+    echo "GET";
+    var_dump($_GET);
+    echo"POST";
+    var_dump($_POST);
+    echo" REQUEST";
+    var_dump($_REQUEST);
+   echo $_POST['name'] ;
+}
+?>
+<?php
+echo '
 <!DOCTYPE html>
 <html lang="en">
 <head> 
@@ -8,11 +26,10 @@
 <body>
 
     <h2>Registration Form</h2>
-
-    <form  action="abc.php" method="post">
+    <form  action="';echo $_SERVER['PHP_SELF'];echo '"method="post">
 
         <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="names" ><br><br>
+        <input type="text" id="name" name="name" ><br><br>
         <label  for ="password">Password:</label><br>
         <input type="password" id="password" name="password" ><br>
 
@@ -56,9 +73,11 @@
         <textarea id="message" name="message" rows="4"></textarea><br><br>
 
         
-        <button type="submit">Submit</button>
+        <input type="submit">
 
     </form>
 
 </body>
 </html>
+';
+?>
