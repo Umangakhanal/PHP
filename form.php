@@ -1,16 +1,15 @@
 <?php
-// if (isset($_POST['']))
-if (isset($_POST['name']))
-    {
-   $name = $_POST['name'];
-   $email = $_POST['email'];
-//    echo $name;
-//    echo $email;
-  // echo 'your name is '.$name . '<br>';
- //  echo "your email is ".$email;
-//    die();
-}
+session_start();
+var_dump($_SESSION);
+
 // $name = $_POST['name'];
+$username=$_POST['username'];
+$_SESSION['username']=$username;
+// $_SESSION['username']='Ram';
+
+var_dump($_SESSION);
+// echo $_POST['username'];
+// echo $_POST['password'];
 
 ?>
 <!DOCTYPE html>
@@ -25,15 +24,16 @@ if (isset($_POST['name']))
     <h2>Registration Form</h2>
     <form  action='<?php echo htmlspecialchars( $_SERVER['PHP_SELF']); ?>' method="post">
 
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" value='<?php if (isset($name))  echo $name ; ?> ' ><br><br>
+        <label for="username">User Name:</label><br>
+        <input type="text" id="name" name="username" value='<?php if (isset($name))  echo $name ; ?> ' ><br><br>
         
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" ><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" ><br><br>
         
         <input type="submit">
         
         </form>
+        
         
         </body>
         </html>

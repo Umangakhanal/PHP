@@ -16,4 +16,4 @@ $data = $_GET;
 // var_dump($_POST);
 // echo" REQUEST";
 // var_dump($_REQUEST);
-echo $_GET['name'];
+// echo $_GET['name'];
