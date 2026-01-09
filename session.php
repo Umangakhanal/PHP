@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($username)){
-
+    
 }
 $username=$_POST['username'];
 $_SESSION['username']=$username;
