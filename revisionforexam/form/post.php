@@ -9,6 +9,9 @@
         if($_SERVER['REQUEST_METHOD']=="POST"){
             $name=$_POST['name'];
             echo "Your name is $name";
+            echo "File name:". $_SERVER['PHP_SELF']."<br>";
+            echo "File name:". $_SERVER['SERVER_NAME']."<br>";
+            echo "File name:". $_SERVER['REQUEST_METHOD']."<br>";
         }
 ?>
 <form  method="post">
